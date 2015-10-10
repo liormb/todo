@@ -11,12 +11,12 @@ var app = new express();
 var port = 3000;
 
 // static files location
-app.use(express.static('public'));
+app.use(express.static('public/c'));
 app.use(express.static('node_modules/bootstrap/dist'));
 
 // routes
 app.get('/', function (req, res) {
-     res.render('./../application/index.html');
+     res.render('./../public/c/index.html');
 });
 
 app.listen(port, function () {
